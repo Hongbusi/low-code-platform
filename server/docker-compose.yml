@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql
+    restart: always
+    ports:
+      - '${DB_PORT}:${DB_PORT}'
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: '${DB_PASSWORD}'
+    volumes:
+      - /Users/Hongbusi/data/low-code-mysql:/data/mysql
+    env_file:
+      - .env
