@@ -17,11 +17,12 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
     "paths": {
-      "@common/common": [
+      "@app/common": [
         "libs/common/src"
       ],
-      "@common/common/*": [
+      "@app/common/*": [
         "libs/common/src/*"
       ]
     }

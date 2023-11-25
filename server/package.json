@@ -9,8 +9,8 @@
     "build": "nest build",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "start": "turbo run dev",
-    "start:server": "nest start",
-    "start:devops": "nest start devops",
+    "start:server": "nest start --watch",
+    "start:devops": "nest start devops --watch",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/apps/server/main",
@@ -23,8 +23,10 @@
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^3.1.1",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/swagger": "^7.1.16",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
     "turbo": "^1.10.16"

@@ -1,6 +1,7 @@
 {
   "name": "server",
   "version": "0.0.1",
+  "description": "",
   "scripts": {
     "dev": "cd .. && pnpm start:server"
   }
